@@ -3,7 +3,7 @@
 
     angular
         .module('app')
-        .factory('UserService', Service);
+        .factory('UsersService', Service);
 
     function Service($http, $q) {
         var service = {};
@@ -19,7 +19,7 @@
         return service;
 
         function GetCurrent() {
-            return $http.get('/api/users/current').then(handleSuccess, handleError);
+            return $http.get('/api/wear/wear-gender').then(handleSuccess, handleError);
         }
 
         function GetAll() {

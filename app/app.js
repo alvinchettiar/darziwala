@@ -18,12 +18,26 @@
                 controllerAs: 'vm',
                 data: { activeTab: 'home' }
             })
+            .state('wear', {
+                url: '/',
+                templateUrl: 'wear/index.html',
+                controller: 'Wear.IndexController',
+                controllerAs: 'wear_cat',
+                data: { activeTab: 'wear' }
+            })
             .state('account', {
                 url: '/account',
                 templateUrl: 'account/index.html',
                 controller: 'Account.IndexController',
                 controllerAs: 'vm',
                 data: { activeTab: 'account' }
+            })
+            .state('accounts', {
+                url: '/accounts',
+                templateUrl: 'accounts/index.html',
+                controller: 'Accounts.IndexController',
+                controllerAs: 'vm',
+                data: { activeTab: 'accounts' }
             });
     }
 

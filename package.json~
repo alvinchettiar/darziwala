@@ -1,10 +1,10 @@
 {
-    "name": "darziwala",
+    "name": "mean-stack-registration-login-example",
     "version": "1.0.0",
-    "description": "Darziwala web application",
+    "description": "MEAN Stack User Registration and Login Example Application",
     "repository": {
         "type": "git",
-        "url": "git@github.com:alvinchettiar/darziwala.git"
+        "url": "https://github.com/cornflourblue/mean-stack-registration-login-example.git"
     },
     "dependencies": {
         "bcryptjs": "^2.1.0",

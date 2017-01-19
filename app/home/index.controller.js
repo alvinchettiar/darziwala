@@ -16,6 +16,7 @@
             // get current user
             UserService.GetCurrent().then(function (user) {
                 vm.user = user;
+//                vm.user.account_type = user.account_type;
             });
         }
     }
