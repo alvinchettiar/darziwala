@@ -21,6 +21,7 @@ function authenticate(username, password) {
     var deferred = Q.defer();
 
     db.users.findOne({ username: username }, function (err, user) {
+        console.log(user);
         if (err) deferred.reject(err.name + ': ' + err.message);
 
         if (user && bcrypt.compareSync(password, user.hash)) {
@@ -39,6 +40,7 @@ function getById(_id) {
     var deferred = Q.defer();
 
     db.users.findById(_id, function (err, user) {
+//        console.log(user);
         if (err) deferred.reject(err.name + ': ' + err.message);
 
         if (user) {
