@@ -11,7 +11,7 @@ router.put('/:_id', updateUser);
 router.delete('/:_id', deleteUser);
 
 module.exports = router;
-
+//testing
 function authenticateUser(req, res) {
     userService.authenticate(req.body.username, req.body.password)
         .then(function (token) {
